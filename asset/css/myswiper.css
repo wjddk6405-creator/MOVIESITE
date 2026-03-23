@@ -1,0 +1,38 @@
+/* 스와이퍼 색수정 */
+.hero .swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+}
+.hero .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.8);
+  width: 20px;
+  height: 20px;
+}
+.hero .swiper-pagination-bullet-active {
+  background: rgba(255, 255, 255, 1);
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-horizontal,
+.swiper-pagination-bullets {
+  .swiper-pagination-bullet {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 960px) {
+  .hero .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+  .hero .swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.8);
+    width: 13px;
+    height: 13px;
+  }
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-horizontal.swiper-pagination-bullets {
+  .swiper-pagination-bullet {
+    margin: 0 8px;
+  }
+}
