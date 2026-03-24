@@ -1,0 +1,574 @@
+/* 배너 영역 */
+
+.banner_menu {
+  width: 100%;
+  padding: 0 16px;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  z-index: 100;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+.banner_menu a:hover {
+  color: #924af0;
+}
+.bm_left {
+}
+.bm_left ul {
+  display: flex;
+}
+.bm_left ul li {
+  /* margin-right: 30px; */
+}
+.bm_left ul li a {
+  color: #fff;
+  display: inline-block;
+  padding: 4px 10px;
+  letter-spacing: -1px;
+}
+.bm_left ul li.total {
+  margin-right: 10px;
+}
+.bm_left ul li.total a {
+  border: 1px solid #fff;
+  transition: all 0.3s;
+  padding: 4px 10px 3px 10px;
+  font-size: 14px;
+}
+.bm_left ul li.total a:hover {
+  background-color: #ffffffa8;
+  border: 1px solid #38116a;
+  color: #38116a;
+}
+.bm_left ul li.total a i.fa-bars {
+  padding-right: 5px;
+}
+.bm_right {
+  display: flex;
+}
+.bm_right ul {
+  display: flex;
+}
+.bm_right ul li {
+}
+.bm_right ul li a {
+  display: inline-block;
+  color: #fff;
+  padding: 7px 14px;
+  letter-spacing: -1px;
+}
+.bm_right ul:nth-child(2) {
+  margin-left: 10px;
+}
+.bm_right ul:nth-child(2) li a {
+  width: 103px;
+  text-align: center;
+  background-color: green;
+  transition: all 0.3s;
+}
+.bm_right ul:nth-child(2) li.white a {
+  background-color: #fff;
+  color: #38116a;
+  padding: 7px 15px;
+  border: 1px solid #38116a;
+}
+.bm_right ul:nth-child(2) li.purple a {
+  background-color: #38116a;
+  margin-left: 20px;
+  padding: 7px 15px;
+  border: 1px solid #000;
+}
+
+.bm_right ul:nth-child(2) li.white a:hover {
+  background-color: #6622be;
+  color: #fff;
+}
+.bm_right ul:nth-child(2) li.purple a:hover {
+  background-color: #924af0;
+  color: #fff;
+}
+
+/* line */
+.bm_left li {
+  position: relative;
+}
+.bm_left li.line::after {
+  content: "";
+  width: 1px;
+  height: 14px;
+  background-color: #fff;
+  position: absolute;
+  top: 9px;
+  right: 0;
+}
+.bm_right li {
+  position: relative;
+}
+.bm_right li.line::after {
+  content: "";
+  width: 1px;
+  height: 14px;
+  background-color: #fff;
+  position: absolute;
+  top: 12px;
+  right: 0;
+}
+
+/* slider */
+.slider {
+  width: 100%;
+}
+.swiper-wrapper {
+  width: 100%;
+  height: 600px;
+}
+.slider .ss1 {
+  height: inherit;
+  background: url(../img/main_slider01.webp) no-repeat top center;
+  background-size: cover;
+}
+.slider .ss2 {
+  height: inherit;
+  background: url(../img/main_slider02.webp) no-repeat top center;
+  background-size: cover;
+}
+.slider .ss3 {
+  height: inherit;
+  background: url(../img/main_slider03.webp) no-repeat top center;
+  background-size: cover;
+}
+.slider .ss4 {
+  height: inherit;
+  background: url(../img/main_slider04.webp) no-repeat top center;
+  background-size: cover;
+}
+.slider .ss5 {
+  height: inherit;
+  background: url(../img/main_slider05.webp) no-repeat top center;
+  background-size: cover;
+}
+.slider .ss6 {
+  height: inherit;
+  background: url(../img/main_slider06.webp) no-repeat top center;
+  background-size: cover;
+}
+.slider .ss7 {
+  height: inherit;
+  background: url(../img/main_slider07.webp) no-repeat top center;
+  background-size: cover;
+}
+.slider .ss8 {
+  height: inherit;
+  background: url(../img/main_slider08.webp) no-repeat top center;
+  background-size: cover;
+}
+.slider h2 {
+  font-size: 62px;
+  font-weight: 500;
+  margin-top: 200px;
+  line-height: 1.2;
+  letter-spacing: -2px;
+  color: #fff;
+  position: relative;
+}
+.slider h2 em {
+  display: block;
+  font-weight: 100;
+  font-size: 59px;
+  letter-spacing: -1px;
+}
+.slider p {
+  color: #fff;
+  font-size: 27px;
+  padding-top: 55px;
+  letter-spacing: -1px;
+}
+.slider h2::after {
+  content: "";
+  width: 380px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+}
+
+/* 배너 끝 */
+
+/* 무비 영역 */
+.movie {
+  padding: 100px 0;
+  overflow: hidden;
+}
+.movie_title {
+  margin-bottom: 60px;
+}
+.movie_title ul {
+  display: flex;
+  width: 848px;
+  margin: 0 auto;
+}
+.movie_title ul li {
+  width: 25%;
+  border: 1px solid #9c9c9c;
+  margin-left: -1px;
+  text-align: center;
+}
+.movie_title ul li a {
+  display: block;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #666;
+  font-weight: 700;
+}
+.movie_title ul li.active a {
+  background-color: #666;
+  color: #fff;
+}
+.movie_chart .swiper-slide {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.poster {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.poster img {
+  display: block;
+}
+.poster .rank {
+  position: absolute;
+  top: 17px;
+  left: 0;
+
+  width: 50px;
+  height: 50px;
+  background-color: #39116a;
+  font-size: 30px;
+  color: #fff;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.poster .rank strong {
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+}
+.poster .mx {
+  position: absolute;
+  top: 17px;
+  right: 17px;
+}
+.poster .mx span {
+  display: block;
+  width: 103px;
+  height: 25px;
+}
+.poster .mx span.m {
+  background-position: 0 -37px;
+  margin-bottom: 5px;
+}
+.poster .mx span.b {
+  background-position: 0 -60px;
+}
+.poster_overlay {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  opacity: 0;
+
+  transform: translateY(100%);
+  transition:
+    opacity 0.5s ease-out,
+    transform 0.3s ease-out;
+}
+.poster:hover .poster_overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+.poster_overlay .summary {
+  width: 100%;
+  padding: 50px 30px 0 30px;
+  box-sizing: border-box;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6; /* 원하는 줄 수 */
+
+  font-size: 14px;
+  text-align: justify;
+}
+.poster_overlay .score {
+  width: 100%;
+  border-top: 1px solid #fff;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.poster_overlay .score span {
+  font-size: 15px;
+}
+.poster_overlay .score strong {
+  font-size: 30px;
+  font-weight: 300;
+  padding-right: 20px;
+}
+.infor {
+  background: #fff;
+  padding: 10px 15px 15px 15px;
+  border: 1px soild #c2c2c2;
+  box-sizing: border-box;
+}
+.infor h3 {
+  margin-bottom: 10px;
+}
+.infor h3 span {
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  vertical-align: -4px;
+  margin-right: 8px;
+}
+.infor h3 span.all {
+  background-position: 0 -89px;
+}
+.infor h3 span.a12 {
+  background-position: -26px -89px;
+}
+.infor h3 span.a15 {
+  background-position: -52px -89px;
+}
+.infor h3 span.a19 {
+  background-position: -78px -89px;
+}
+.infor h3 strong {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.infor .infor_btn {
+  display: flex;
+  justify-content: space-between;
+}
+.infor .infor_btn a {
+  display: block;
+  width: 48%;
+  background-color: #c2c2c2;
+  font-size: 17px;
+  padding: 8px 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+.infor .infor_btn a:hover {
+  background-color: #aaaaaa;
+  color: #38116a;
+}
+/* 미디어 쿼리 */
+@media (max-width: 1290px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .banner_menu {
+    justify-content: flex-end;
+    top: 15px;
+  }
+  .bm_left {
+    display: none;
+  }
+  .bm_right ul:nth-child(1) {
+    display: none;
+  }
+}
+@media (max-width: 960px) {
+  .slider-wrapper {
+    height: 500px;
+  }
+  .slider h2 {
+    margin-top: 160px;
+    font-size: 37px;
+  }
+  .slider h2 em {
+    font-size: 34px;
+  }
+  .slider p {
+    font-size: 20px;
+    padding-top: 35px;
+  }
+  .slider h2::after {
+    width: 250px;
+    bottom: -15px;
+  }
+  .hero .swiper-button-next,
+  .hero .swiper-button-prev {
+    display: none;
+  }
+  /* //배너 끝 */
+  .movie_title ul {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .bm_right ul:nth-child(2) {
+    margin-left: 5px;
+  }
+  .bm_right ul:nth-child(2) li.white a,
+  .bm_right ul:nth-child(2) li.purple a {
+    width: 70px;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    margin-left: 10px;
+  }
+  .bm_right ul:nth-child(2) li.white a:hover,
+  .bm_right ul:nth-child(2) li.purple a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  .swiper-wrapper {
+    height: 400px;
+  }
+  .slider h2 {
+    margin-top: 150px;
+    font-size: 24px;
+    margin-left: 10px;
+  }
+  .slider h2 em {
+    font-size: 20px;
+  }
+  .slider p {
+    font-size: 14px;
+    padding-top: 25px;
+    margin-left: 10px;
+  }
+  .slider h2::after {
+    width: 150px;
+    bottom: -15px;
+  }
+  #movie .row {
+    background-color: #fff;
+    padding: 0 24px;
+  }
+
+  .movie {
+    padding: 24px 0;
+  }
+
+  .movie .ir_so {
+    position: static;
+    width: auto;
+    height: auto;
+    line-height: normal;
+    text-indent: 0;
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #666;
+  }
+  .movie_title {
+    padding-bottom: 20px;
+  }
+
+  .movie_title ul li {
+    width: auto;
+    border: 0 none;
+  }
+  .movie_title ul li a {
+    font-weight: 400;
+    margin-right: 35px;
+    padding: 5px 0;
+    position: relative;
+  }
+  .movie_title ul li.active a {
+    background: none;
+    color: #666;
+  }
+  .movie_title ul li.active a::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #666;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+@media (max-width: 600px) {
+  #movie {
+    padding: 16px;
+  }
+  #movie .row {
+    padding: 0 16px;
+  }
+  .movie_title ul li a {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .swiper-wrapper {
+    height: 200px;
+  }
+  .slider h2 {
+    font-size: 20px;
+    margin-top: 60px;
+  }
+  .slider h2 em {
+    font-size: 18px;
+  }
+  .slider p {
+    font-size: 16px;
+    padding-top: 15px;
+  }
+  .slider h2::after {
+  }
+  #movie {
+    padding: 12px;
+  }
+  #movie .row {
+    padding: 0 12px;
+  }
+  .movie .ir_so {
+    font-size: 18px;
+  }
+  .movie_title ul li a {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  #movie .container {
+    position: relative;
+  }
+  #movie .container::after {
+    content: "";
+    width: 12px;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
