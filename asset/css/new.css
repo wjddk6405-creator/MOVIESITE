@@ -1,4 +1,4 @@
-/* 뉴 영역 */
+/* 뉴(새로운) 영역 */
 .new {
   padding: 100px 0;
 }
@@ -21,16 +21,14 @@
   justify-content: center;
   align-items: center;
 }
-
 .new_right {
   width: 400px;
   height: 500px;
-  padding: 34px;
   background-color: #f2f2f2;
+  padding: 34px;
   box-sizing: border-box;
 }
-
-.new_right > .title {
+.new_right .title {
   font-size: 28px;
   color: #000;
 }
@@ -81,6 +79,7 @@
   display: inline-block;
   border: 0 none;
   box-sizing: border-box;
+  border-radius: 0;
 }
 .new_right .select .s2 {
   width: 49%;
@@ -99,6 +98,7 @@
   padding: 10px 20px 12px 30px;
   background-color: yellow;
   width: 49%;
+  box-sizing: border-box;
   text-align: center;
 }
 .new_right .btn a.white {
